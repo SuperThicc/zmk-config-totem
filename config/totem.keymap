@@ -70,7 +70,7 @@
         base_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "BASE";
+            label = "Base";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -123,7 +123,7 @@
         adjust_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "ADJ";
+            label = "Adj";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -158,13 +158,15 @@
             label = "Num";
         };
 
-        layer_5 {
+        FPS {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+         &kp ESC         &kp Q  &kp Z   &kp E      &kp R     &trans  &kp F1  &kp F2  &kp F3  &kp F4
+         &kp LEFT_SHIFT  &kp A  &kp W   &kp D      &kp G     &trans  &kp N1  &kp N2  &kp N3  &kp N4
+&kp TAB  &kp LCTRL       &kp C  &kp S   &kp V      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp N1  &kp SPACE  &kp N2    &trans  &trans  &trans
             >;
+
+            label = "FPS";
         };
     };
 };
